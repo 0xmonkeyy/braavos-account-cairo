@@ -1,0 +1,142 @@
+[
+    {
+        "members": [
+            {
+                "name": "expire_at",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "signer_id",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "DeferredRemoveSignerRequest",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "signer_0",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "signer_1",
+                "offset": 1,
+                "type": "felt"
+            },
+            {
+                "name": "signer_2",
+                "offset": 2,
+                "type": "felt"
+            },
+            {
+                "name": "signer_3",
+                "offset": 3,
+                "type": "felt"
+            },
+            {
+                "name": "type",
+                "offset": 4,
+                "type": "felt"
+            },
+            {
+                "name": "reserved_0",
+                "offset": 5,
+                "type": "felt"
+            },
+            {
+                "name": "reserved_1",
+                "offset": 6,
+                "type": "felt"
+            }
+        ],
+        "name": "SignerModel",
+        "size": 7,
+        "type": "struct"
+    },
+    {
+        "data": [
+            {
+                "name": "implementation",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "Upgraded",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "request",
+                "type": "DeferredRemoveSignerRequest"
+            }
+        ],
+        "keys": [],
+        "name": "SignerRemoveRequest",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "signer_id",
+                "type": "felt"
+            },
+            {
+                "name": "signer",
+                "type": "SignerModel"
+            }
+        ],
+        "keys": [],
+        "name": "SignerAdded",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "signer_id",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "SignerRemoved",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "request",
+                "type": "DeferredRemoveSignerRequest"
+            }
+        ],
+        "keys": [],
+        "name": "SignerRemoveRequestCancelled",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "public_key",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "AccountInitialized",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "name": "public_key",
+                "type": "felt"
+            }
+        ],
+        "name": "initializer",
+        "outputs": [],
+        "type": "function"
+    }
+]
